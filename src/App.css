@@ -1,0 +1,91 @@
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  min-height: 100vh;
+}
+
+.consignes {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.consignes ul, .consignes h4 {
+  text-align: left;
+}
+
+.main-block {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 600px;
+}
+
+.word-to-guess {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  transition: opacity 0.5s ease;
+}
+
+.word-to-guess.hide {
+  opacity: 0;
+}
+
+.indices {
+  min-height: 100px; 
+  width: 300px;
+  color: #666;
+  margin: 10px 0;
+  transition: all 0.3s ease;
+  /* opacity: 0;
+  visibility: hidden; */
+  text-align: center;
+  font-style: italic;
+}
+
+.indices.show {
+  opacity: 1;
+  visibility: visible;
+  animation: fadeIn 0.5s ease;
+  text-align: left;
+  font-style: normal;
+}
+
+
+.indices p {
+  color: #666;
+  margin: 10px 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button-solution, .button-word {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-solution:hover, .button-word:hover {
+  background-color: #0056b3;
+}
