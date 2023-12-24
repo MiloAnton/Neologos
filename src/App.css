@@ -48,15 +48,13 @@
 .word-to-guess.hide {
   opacity: 0;
 }
-
+a
 .indices {
   min-height: 100px;
   width: 300px;
   color: #666;
   margin: 10px 0;
   transition: all 0.3s ease;
-  /* opacity: 0;
-  visibility: hidden; */
   text-align: center;
   font-style: italic;
 }
@@ -76,12 +74,13 @@
 
 .buttons {
   display: flex;
+  flex-direction: column;
   gap: 10px;
   margin-top: 20px;
 }
 
 .button-solution,
-.button-word {
+.button-word, .button-separation {
   background-color: #007bff;
   color: white;
   border: none;
@@ -89,9 +88,37 @@
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  user-select: none;
+  text-align: center;
+}
+
+.button-solution-disabled {
+  background-color: #ccc;
+  color: #666;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: not-allowed;
+  transition: background-color 0.3s ease;
+  user-select: none;
+  text-align: center;
 }
 
 .button-solution:hover,
-.button-word:hover {
+.button-word:hover, .button-separation:hover {
   background-color: #0056b3;
+}
+
+.prefix {
+  margin-right: 5px;
+  color : #9a1500;
+}
+
+.root {
+  margin-right: 5px;
+  color : #167a00;
+}
+
+.suffix {
+  color : #003b7e;
 }

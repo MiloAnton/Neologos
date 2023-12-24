@@ -10,9 +10,17 @@ function App() {
   const [suffixMeaning, setSuffixMeaning] = useState("");
   const [reveal, setReveal] = useState(false);
   const [hideWord, setHideWord] = useState(false);
+  const [splitWord, setSplitWord] = useState(false);
+  const [splitWordPrefix, setSplitWordPrefix] = useState("");
+  const [splitWordRoot, setSplitWordRoot] = useState("");
+  const [splitWordSuffix, setSplitWordSuffix] = useState("");
 
   const createWord = () => {
     setHideWord(true);
+    setSplitWordPrefix("");
+    setSplitWordRoot("");
+    setSplitWordSuffix("");
+    setSplitWord(false);
     let word = "";
     setTimeout(() => {
       let prefix =
@@ -36,6 +44,7 @@ function App() {
           ") : " +
           prefix.meaning
       );
+      setSplitWordPrefix(prefix.element);
       setRootMeaning(
         "Racine : " +
           root.element +
@@ -44,6 +53,7 @@ function App() {
           ") : " +
           root.meaning
       );
+      setSplitWordRoot(root.element);
       setSuffixMeaning(
         "Suffixe : " +
           suffix.element +
@@ -52,6 +62,7 @@ function App() {
           ") : " +
           suffix.meaning
       );
+      setSplitWordSuffix(suffix.element);
       setWordToGuess(word);
       setReveal(false);
       setHideWord(false);
@@ -60,6 +71,10 @@ function App() {
 
   const revealSolution = () => {
     setReveal(true);
+  };
+
+  const splitWordWithColors = () => {
+    setSplitWord(!splitWord);
   };
 
   useEffect(() => {
@@ -86,15 +101,23 @@ function App() {
         <div className="main-block">
           <b>
             <p className={`word-to-guess ${hideWord ? "hide" : ""}`}>
-              {wordToGuess}
+              {splitWord ? (
+                <>
+                  <span className="prefix">{splitWordPrefix}</span>
+                  <span className="root">{splitWordRoot}</span>
+                  <span className="suffix">{splitWordSuffix}</span>
+                </>
+              ) : (
+                wordToGuess
+              )}
             </p>
           </b>
           <div className={`indices ${reveal ? "show" : ""}`}>
             {reveal ? (
               <>
-                <p>{prefixMeaning}</p>
-                <p>{rootMeaning}</p>
-                <p>{suffixMeaning}</p>
+                <p className="prefix">{prefixMeaning}</p>
+                <p className="root">{rootMeaning}</p>
+                <p className="suffix">{suffixMeaning}</p>
               </>
             ) : (
               <p>Révélez les indices pour qu'ils apparaissent ici</p>
@@ -102,7 +125,13 @@ function App() {
           </div>
         </div>
         <div className="buttons">
-          <div className="button-solution" onClick={revealSolution}>
+          <div className="button-separation" onClick={splitWordWithColors}>
+            {splitWord ? "Recomposer le mot" : "Décomposer le mot"}
+          </div>
+          <div
+            className={reveal ? "button-solution-disabled" : "button-solution"}
+            onClick={revealSolution}
+          >
             Révéler les indices
           </div>
           <div className="button-word" onClick={createWord}>
