@@ -1,13 +1,17 @@
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .main-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 30px;
   min-height: 100vh;
 }
 
@@ -20,13 +24,14 @@
   margin-bottom: 30px;
 }
 
-.consignes ul, .consignes h4 {
+.consignes ul,
+.consignes h4 {
   text-align: left;
 }
 
 .main-block {
   background-color: #ffffff;
-  padding: 20px;
+  padding: 0 15px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -45,7 +50,7 @@
 }
 
 .indices {
-  min-height: 100px; 
+  min-height: 100px;
   width: 300px;
   color: #666;
   margin: 10px 0;
@@ -64,7 +69,6 @@
   font-style: normal;
 }
 
-
 .indices p {
   color: #666;
   margin: 10px 0;
@@ -76,7 +80,8 @@
   margin-top: 20px;
 }
 
-.button-solution, .button-word {
+.button-solution,
+.button-word {
   background-color: #007bff;
   color: white;
   border: none;
@@ -86,6 +91,7 @@
   transition: background-color 0.3s ease;
 }
 
-.button-solution:hover, .button-word:hover {
+.button-solution:hover,
+.button-word:hover {
   background-color: #0056b3;
 }
