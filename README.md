@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# 🌟 Neologos - Générateur de mots inventés 🌟
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bienvenue dans **Neologos**, une application ludique qui génère des mots aléatoires à partir de préfixes, racines et suffixes latins ou grecs, accompagnés de leur signification détaillée et d'une définition fantaisiste ! Idéal pour enrichir son vocabulaire, stimuler la créativité ou simplement s'amuser !
 
-## Available Scripts
+**153 120 mots uniques, 153120 définitions uniques !**
 
-In the project directory, you can run:
+## 🛠 Technologies utilisées
+- React.js (Create React App)
+- JavaScript
+- HTML & CSS
 
-### `npm start`
+## 📚 Fonctionnalités
+- Génération aléatoire d'un mot à partir de préfixes, racines et suffixes latins ou grecs.
+- Affichage détaillé des significations pour chaque partie du mot.
+- Génération automatique d'une définition originale et amusante.
+- Interface simple et intuitive.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🎓 Objectif du projet
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Neologos a pour but pédagogique de permettre l'apprentissage ludique des préfixes, racines et suffixes issus des langues latine et grecque tout en stimulant la créativité et l'imagination linguistique.
 
-### `npm test`
+## 📌 À venir
+- Plus de racines, préfixes et suffixes
+- Sauvegarde des mots favoris
+- Partage social facile
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📬 Contribution
 
-### `npm run build`
+Toute suggestion ou amélioration est bienvenue ! N'hésite pas à ouvrir une issue ou une pull request pour contribuer.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Bon amusement avec Neologos ! 🌈✨
