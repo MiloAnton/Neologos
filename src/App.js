@@ -192,9 +192,10 @@ const handleGenerateDefinition = () => {
       <div className="main-content">
         <div className="consignes">
           <h3>
-            Neologos est un jeu où vous devez deviner le sens d'un mot à partir
+            Neologos est un jeu où vous devez deviner le sens d'un mot aléatoirement généré à partir
             de ses éléments constitutifs.
           </h3>
+          <h3 style={{ color: "blue"}}>153 120 mots possibles</h3>
           <h4>Les éléments sont les suivants :</h4>
           <ul>
             <li>Préfixe : élément placé avant le radical</li>
